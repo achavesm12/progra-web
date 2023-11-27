@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacto</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estiloContacto.css">
+    <link rel="shortcut icon" href="img/miLogo-removebg-preview.png">
+</head>
+
+<body>
+    <div id="menu">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="img/miLogo-removebg-preview.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="comprar.html">Comprar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="historia.html">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ubicacion.html" class="nav-link" href="ubicacion.html">Ubicación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="autores.html">Autores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="acercade.html">Acerca de</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <div id="formulario">
+            <form action="https://formsubmit.co/canamaria1000@gmail.com" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control form-control-lg" id="nombre" name="Name"
+                        placeholder="Escriba su nombre" title="Escriba su nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Apellidos:</label>
+                    <input type="text" class="form-control form-control-lg" id="lastName" name="LastName"
+                        placeholder="Escriba su apellido" title="Escriba su apellido" required>
+                </div>
+                <label for="gender">Genero</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="gender" checked value="Female">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Femenino
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="gender" value="Male">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Masculino
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="fechaNacimiento">Fecha de nacimiento:</label>
+                    <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento">
+                </div>
+                <input type="hidden" id="edad" name="edad">
+                <div class="form-group">
+                    <label for="email">Correo:</label>
+                    <input type="email" class="form-control form-control-lg" id="email" name="email"
+                        placeholder="Escriba su correo" title="Escriba su correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea class="form-control form-control-lg" id="mensaje" rows="4" name="message"
+                        placeholder="Escriba su mensaje" title="Escriba su mensaje" required></textarea>
+                </div>
+                <button id="botonG" type="submit" class="btn btn-primary" onclick="calcularEdad()">Submit</button>
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/Proyecto/index.html">
+                <!-- Cambiar el value por la pagina de inicio cuando se suba -->
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </div>
+    </main>
+
+    <div class="informacion">
+        <h2>Contáctanos</h2>
+        <br>
+        <h5>WhatsApp: (506) 8579-0124</h5>
+        <h5>Facebook: Food House Cañas</h5>
+        <h5>Correo electrónico: Foodhouse@gmail.com</h5>
+        <h5>Dirección: Ave. 8 - Urbanización Baviera, Alajuela, Alajuela.</h5>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+<footer id="foot">
+    <div id="redes">
+        <a href=""><img
+                src="https://static.vecteezy.com/system/resources/previews/023/986/470/original/facebook-logo-facebook-logo-transparent-facebook-icon-transparent-free-free-png.png"
+                alt="Facebook"></a>
+        <a href=""><img
+                src="https://static.vecteezy.com/system/resources/previews/018/930/692/original/instagram-logo-instagram-icon-transparent-free-png.png"
+                alt="Instagram"></a>
+    </div>
+    <p>&copy; Derechos reservados</p>
+    <p>Telefono: (506) 8579-0124</p>
+    <p>Correo: foodhouse@gmail.com</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+</html>

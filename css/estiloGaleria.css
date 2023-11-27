@@ -1,0 +1,102 @@
+#menu img {
+  width: 100px;
+  height: 100px;
+
+}
+
+#menu {
+  background-color: #d9fba2;
+}
+
+.container-fluid {
+  background-color: #d9fba2;
+  color: white;
+}
+
+#eslogan {
+  text-align: center;
+  margin-top: 10px;
+  box-shadow: 5px 5px 10px grey;
+  width: 80%;
+  margin-left: 150px;
+}
+
+
+/** #foot{
+  background-color: black;
+  color: white;
+  height: 150px;
+  margin-top: 10px;
+
+}
+
+#foot a{
+  color: white;
+  text-decoration: none;
+}
+**/
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Asegura que el contenido principal se expanda y empuje el pie de página hacia abajo si es necesario */
+main {
+  flex: 1;
+}
+
+/* Estiliza el pie de página según tus necesidades */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+#redes img {
+  height: 75px;
+  width: 75px;
+}
+
+#logo {
+  background-color: #d9fba2;
+}
+
+#principal {
+  display: inline-block;
+  text-align: center;
+}
+
+#galeria img {
+  height: 400px;
+  width: 400px;
+  margin: 25px;
+  padding: 10px;
+  border: 1px solid grey;
+
+}
+
+#galeria img:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
+
+@media(max-width:768px) {
+  #galeria img {
+    height: 245px;
+    width: 245px;
+  }
+
+  #galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #foot {
+    text-align: left;
+  }
+
+}

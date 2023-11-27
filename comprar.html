@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food House</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Menú</title>
+    <link rel="stylesheet" href="js/comprar.js">
+    <link rel="stylesheet" href="css/estilocomprar.css">
+</head>
+
+<body>
+
+
+    <div id="menuprincipal">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="img/miLogo-removebg-preview.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active" aria-current="page"
+                                href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="menu.html" class="nav-link" href="#">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacto.html" class="nav-link" href="#">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="comprar.html" class="nav-link" href="historia.html">Comprar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="historia.html" class="nav-link" href="historia.html">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="ubicacion.html" class="nav-link" href="ubicacion.html">Ubicación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="autores.html">Autores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="acercade.html">Acerca de</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="contenedorPrincipal">
+        <h2 class="favoritosTitulo">Favoritos</h2>
+        <div class="search-container">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" id="searchInput" placeholder="Search"
+                    aria-label="Search">
+            </form>
+        </div>
+    </div>
+
+    <hr style="border: 1px solid #000; margin: 0;">
+
+    <div id="menu">
+        <!-- Contenido del menú -->
+        <div class="producto" onclick="agregarAlCarrito('Hamburguesa con papas', 3500)">
+            <div class="producto-content">
+                <div class="descriProducto">
+                    <h5>Hamburguesa con papas</h5>
+                    <p>Pan,Torta, Tocineta, Queso Chedar y Mozzarella </p>
+                    <p>Cebolla Encurtida, Pepino Encurtido</p>
+                    <p>Papas Salpimentadas y salsas</p>
+                    <p>Precio: ₡3.500</p>
+                    <button>Agregar</button>
+                </div>
+                <div class="producto-img">
+                    <img src="img/Hconpapas.jpg" alt="Hamburguesa Miedo">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="producto" onclick="agregarAlCarrito('Hamburguesa Mexicana', 3500)">
+            <div class="producto-content">
+                <div class="descriProducto">
+                    <h5>Hamburguesa Mexicana</h5>
+                    <p>Pan, Carne Desmechada, Queso Chedar y </p>
+                    <p> Mozzarella, Cebolla Encurtida, Pepino </p>
+                    <p>Encurtido, Jalapeño, Papas Salimentadas y salsas</p>
+                    <p>Precio: ₡3.500</p>
+                    <button>Agregar</button>
+                </div>
+                <div class="producto-img">
+                    <img src="img/mechada2-scaled.jpg" alt="PapiFull Grande">
+                </div>
+            </div>
+        </div>
+
+        <div class="producto" onclick="agregarAlCarrito('Nacho Pollo', 3500)">
+            <div class="producto-content">
+                <div class="descriProducto">
+                    <h5>Nacho Pollo</h5>
+                    <p>Tortilla de Fritura,Guacamole, Queso Cheddar</p>
+                    <p>Pico Gallo, Jalapeño, Frijoles Molidos</p>
+                    <p>Crema Tocineta, pollo a la plancha y salsas</p>
+                    <p>Precio: ₡3.500</p>
+                    <button>Agregar</button>
+                </div>
+                <div class="producto-img">
+                    <img src="img/Nechopollo.jpg" alt="Patacones en Canasta">
+                </div>
+            </div>
+        </div>
+
+        <div class="producto" onclick="agregarAlCarrito('Nacho Carne', 3500)">
+            <div class="producto-content">
+                <div class="descriProducto">
+                    <h5>Nacho Carne</h5>
+                    <p>Tortillitas de Fritura, Guacamole, Queso Cheddar</p>
+                    <p>Pico Gallo, Jalapeño, Frijoles Molidos</p>
+                    <p>Crema Tocineta, Carne Desmechada y Salsas</p>
+                    <p>Precio: ₡3.500</p>
+                    <button>Agregar</button>
+                </div>
+                <div class="producto-img">
+                    <img src="img/nachocarnepng.png" alt="Patacones en Canasta">
+                </div>
+            </div>
+        </div>
+
+        <div class="producto" onclick="agregarAlCarrito('salchicarne', 3500)">
+            <div class="producto-content">
+                <div class="descriProducto">
+                    <h5>Salchicarne</h5>
+                    <p>350 gramos Papa, Salchicha, Carne Desmechada</p>
+                    <p>Salsa Queso, Crema de Tocineta </p>
+                    <p>Pico Gallo y Salsas</p>
+                    <p>Precio: ₡3.500</p>
+                    <button>Agregar</button>
+                </div>
+                <div class="producto-img">
+                    <img src="img/salchipapicarne.jpeg" alt="Choripapa">
+                </div>
+            </div>
+        </div>
+        <div class="producto" onclick="agregarAlCarrito('Salchipapa', 3500)">
+            <div class="producto-content">
+                <div class="descriProducto">
+                    <h5>Salchipapa</h5>
+                    <p>350 gramos Papa, Salchicha, Salsa Queso</p>
+                    <p>Crema de Tocineta </p>
+                    <p>Pico Gallo y Salsas</p>
+                    <p>Precio: ₡3.500</p>
+                    <button>Agregar</button>
+                </div>
+                <div class="producto-img">
+                    <img src="img/salchipapas.jpg" alt="salchipapa">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="producto" onclick="agregarAlCarrito('Papicarne', 3500)">
+            <div class="producto-content">
+                <div class="descriProducto">
+                    <h5>Papicarne </h5>
+                    <p>350 gramos Papas, Carne Desmechada Arreglada</p>
+                    <p> Salsa de Queso, Creama de Tocineta</p>
+                    <p>Pico Gallo y Salsas</p>
+                    <p>Precio: ₡3.500</p>
+                    <button>Agregar</button>
+                </div>
+                <div class="producto-img">
+                    <img src="img/papicarne.jpeg" alt="Choripapa">
+                </div>
+            </div>
+        </div>
+        <div class="producto" onclick="agregarAlCarrito('Papas Supremas ', 3500)">
+            <div class="producto-content">
+                <div class="descriProducto">
+                    <h5>Papas Supremas </h5>
+                    <p>350 gramos Papas, Carne Molida Arreglada</p>
+                    <p> Salsa de Queso, Creama de Tocineta</p>
+                    <p>Pico Gallo y Salsas</p>
+                    <p>Precio: ₡3.500</p>
+                    <button>Agregar</button>
+                </div>
+                <div class="producto-img">
+                    <img src="img/papas-ala-francesa.jpg" alt="Choripapa">
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <br>
+    <br>
+
+    <h2>Mas del Menú</h2>
+    <hr style="border: 1px solid #000; margin: 0;">
+    <div id="menu">
+        <!-- Agrega más productos según sea necesario -->
+        <div class="producto" onclick="agregarAlCarrito('TacoPapas', 2250)">
+            <div class="producto-content">
+                <div class="descriProducto">
+                    <h5>TacoPapas</h5>
+                    <p>Precio: ₡2.250</p>
+                    <button>Agregar</button>
+                </div>
+                <div class="producto-img">
+                    <img src="img/ttacopapas.jpg" alt="TacoPapas">
+                </div>
+            </div>
+        </div>
+        <div class="producto" onclick="agregarAlCarrito('Burrito', 2600)">
+            <div class="producto-content">
+                <div class="descriProducto">
+                    <h5>Burrito</h5>
+                    <p>Precio: ₡2.600</p>
+                    <button>Agregar</button>
+                </div>
+                <div class="producto-img">
+                    <img src="img/burrito.jpg" alt="burritto">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="producto" onclick="agregarAlCarrito('TacoTico', 1300)">
+            <div class="producto-content">
+                <div class="descriProducto">
+                    <h5>TacoTico</h5>
+                    <p>Precio: ₡1.300</p>
+                    <button>Seleccionar</button>
+                </div>
+                <div class="producto-img">
+                    <img src="img/TacoTico.jpg" alt="tacotico">
+                </div>
+            </div>
+        </div>
+        <div class="producto" onclick="agregarAlCarrito('Pechuga y Ala', 1300)">
+            <div class="producto-content">
+                <div class="descriProducto">
+                    <h5>Pechuga y Ala</h5>
+                    <p>Precio: ₡1.300</p>
+                    <button>Agregar</button>
+                </div>
+                <div class="producto-img">
+                    <img src="img/pecgugayyAla.jpg" alt="tacotico">
+                </div>
+            </div>
+        </div>
+        <div class="producto" onclick="agregarAlCarrito('Pechuga y Ala', 1900)">
+            <div class="producto-content">
+                <div class="descriProducto">
+                    <h5>Aros de Cebolla</h5>
+                    <p>Precio: ₡1.900</p>
+                    <button>Agregar</button>
+                </div>
+                <div class="producto-img">
+                    <img src="img/arosdecebolla.jpg" alt="tacotico">
+                </div>
+            </div>
+        </div>
+
+        <div class="producto" onclick="agregarAlCarrito('Taquesmole', 2650)">
+            <div class="producto-content">
+                <div class="descriProducto">
+                    <h5>Taquesmole</h5>
+                    <p>Precio: ₡2.650</p>
+                    <button>Agregar</button>
+                </div>
+                <div class="producto-img">
+                    <img src="img/taquesmole.jpg" alt="tacotico">
+                </div>
+            </div>
+        </div>
+        <div class="producto" onclick="agregarAlCarrito('Aros de cebolla', 2650)">
+            <div class="producto-content">
+                <div class="descriProducto">
+                    <h5>Torta Tipo Sandwich</h5>
+                    <p>Precio: ₡2.650</p>
+                    <button>Agregar</button>
+                </div>
+                <div class="producto-img">
+                    <img src="img/tortasandiwch.jpg" alt="tacotico">
+                </div>
+            </div>
+        </div>
+        <div class="producto" onclick="agregarAlCarrito('Quesadilla', 2600)">
+            <div class="producto-content">
+                <div class="descriProducto">
+                    <h5>Quesadilla</h5>
+                    <p>Precio: ₡2.600</p>
+                    <button>Agregar</button>
+                </div>
+                <div class="producto-img">
+                    <img src="img/quesadilla.jpg" alt="tacotico">
+                </div>
+            </div>
+        </div>
+        <div class="producto" onclick="agregarAlCarrito('Alitas', 2600)">
+            <div class="producto-content">
+                <div class="descriProducto">
+                    <h5>Alitas</h5>
+                    <p>Precio: ₡2.600</p>
+                    <button>Agregar</button>
+                </div>
+                <div class="producto-img">
+                    <img src="img/Alitas.jpg" alt="tacotico">
+                </div>
+            </div>
+        </div>
+
+        <div class="producto" onclick="agregarAlCarrito('hot dog', 2600)">
+            <div class="producto-content">
+                <div class="descriProducto">
+                    <h5>Hot Dog</h5>
+                    <p>Precio: ₡2.600</p>
+                    <button>Agregar</button>
+                </div>
+                <div class="producto-img">
+                    <img src="img/Hot-Dogs.jpg" alt="tacotico">
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <h2>Algunas Bebidas</h2>
+        <hr style="border: 1px solid #000; margin: 0;">
+        <div id="menu">
+            <!-- Agrega más productos según sea necesario -->
+            <div class="producto" onclick="agregarAlCarrito('Coca Cola Retornable', 1200)">
+                <div class="producto-content">
+                    <div class="descriProducto">
+                        <h5>Coca Cola Retornables</h5>
+                        <p>Precio: ₡1.200</p>
+                        <button>Agregar</button>
+                    </div>
+                    <div class="producto-img">
+                        <img src="img/Retornable.jpg" alt="TacoPapas">
+                    </div>
+                </div>
+            </div>
+            <div class="producto" onclick="agregarAlCarrito('Coca Cola 600ml', 800)">
+                <div class="producto-content">
+                    <div class="descriProducto">
+                        <h5>Coca Cola 600ml</h5>
+                        <p>Precio: ₡800</p>
+                        <button>Agregar</button>
+                    </div>
+                    <div class="producto-img">
+                        <img src="img/coca600.png" alt="TacoPapas">
+                    </div>
+                </div>
+            </div>
+
+            <div class="producto" onclick="agregarAlCarrito('Ginger Ale', 1400)">
+                <div class="producto-content">
+                    <div class="descriProducto">
+                        <h5>Ginger Ale</h5>
+                        <p>Precio: ₡1.400</p>
+                        <button>Agregar</button>
+                    </div>
+                    <div class="producto-img">
+                        <img src="img/ginger.jpg" alt="tacotico">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="producto" onclick="agregarAlCarrito('Gin 600ml', 800)">
+                <div class="producto-content">
+                    <div class="descriProducto">
+                        <h5>Gin 600ml</h5>
+                        <p>Precio: ₡800</p>
+                        <button>Agregar</button>
+                    </div>
+                    <div class="producto-img">
+                        <img src="img/Gin600.jpg" alt="TacoPapas">
+                    </div>
+                </div>
+            </div>
+            <div class="producto" onclick="agregarAlCarrito('Fanta Naraja 1.5L', 1100)">
+                <div class="producto-content">
+                    <div class="descriProducto">
+                        <h5>Fanta Naraja 1.5L</h5>
+                        <p>Precio: ₡1.100</p>
+                        <button>Agregar</button>
+                    </div>
+                    <div class="producto-img">
+                        <img src="img/FantaG.jpg" alt="TacoPapas">
+                    </div>
+                </div>
+            </div>
+            <div class="producto" onclick="agregarAlCarrito('Fanta Naraja 600ml', 800)">
+                <div class="producto-content">
+                    <div class="descriProducto">
+                        <h5>Fanta Naraja 600ml</h5>
+                        <p>Precio: ₡800</p>
+                        <button>Agregar</button>
+                    </div>
+                    <div class="producto-img">
+                        <img src="img/fantapeq.jpg" alt="TacoPapas">
+                    </div>
+                </div>
+            </div>
+            <div>
+            </div>
+
+            <div id="carrito" class="mt-4">
+                <h2 class="mb-3">Productos seleccionados</h2>
+                <hr style="border: 1px solid #000; margin: 0;">
+                <ul id="lista-carrito" class="list-group mb-3">
+                    <!-- Contenido del carrito se añadirá dinámicamente aquí -->
+                </ul>
+                <p class="mb-3">Total: ₡<span id="total">0.00</span></p>
+                <button type="button" class="btn btn-danger me-2" onclick="eliminarUltimoProducto()">Eliminar
+                    Último</button>
+                <button type="button" class="btn btn-primary" onclick="hacerpedido()">Hacer Pedido</button>
+            </div>
+
+            <script src="js/comprar.js"></script>
+            <script>
+                // Manejar el evento keyup en el campo de búsqueda
+                $("#searchInput").on("keyup", function () {
+                    // Obtener el texto de búsqueda
+                    var searchText = $(this).val().toLowerCase();
+
+                    // Ocultar todos los productos
+                    $(".producto").hide();
+
+                    // Filtrar productos que coincidan con el texto de búsqueda
+                    $(".producto").each(function () {
+                        var productoNombre = $(this).find("h5").text().toLowerCase();
+
+                        if (productoNombre.includes(searchText)) {
+                            $(this).show();
+                        }
+                    });
+                });
+            </script>
+
+
+
+            <footer id="foot">
+                <div id="redes">
+                    <a href=""><img
+                            src="https://static.vecteezy.com/system/resources/previews/023/986/470/original/facebook-logo-facebook-logo-transparent-facebook-icon-transparent-free-free-png.png"
+                            alt="Facebook"></a>
+                    <a href=""><img
+                            src="https://static.vecteezy.com/system/resources/previews/018/930/692/original/instagram-logo-instagram-icon-transparent-free-png.png"
+                            alt="Instagram"></a>
+                </div>
+                <p>&copy; Derechos reservados</p>
+                <p>Telefono: (506) 8579-0124</p>
+                <p>Correo: foodhouse@gmail.com</p>
+            </footer>
+
+</body>
+
+</html>

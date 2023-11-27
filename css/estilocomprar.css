@@ -1,0 +1,175 @@
+/* Estilos generales para productos */
+.producto,
+.marco {
+    border: 2px solid #98a728;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+    width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el contenedor que envuelve tanto search-container como el título h2 */
+.contenedorPrincipal {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para el contenedor de búsqueda */
+.search-container {
+    width: 200px;
+    margin: 10px;
+    float: right;
+}
+
+.contenedorPrincipal h2 {
+    margin-bottom: 10px;
+    /* Ajusta el margen inferior según sea necesario */
+}
+
+/* Estilo para el título h2 */
+h2 {
+    margin-left: 20px;
+    /* Ajusta el margen izquierdo según sea necesario */
+}
+
+.search-container {
+    border: 1px solid #d9fba2;
+    /* Borde verde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    padding: 5px;
+    /* Espaciado interno para hacerlo más visible */
+}
+
+/* Opcional: Estilo para el campo de búsqueda */
+.search-container input {
+    border: none;
+    /* Quita el borde del input para que no haya duplicación */
+}
+
+/* Estilos para imágenes dentro de productos */
+.producto-img img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+}
+
+.contenedorPrincipal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.favoritosTitulo {
+    margin-bottom: 10px;
+    /* Ajusta el margen inferior según sea necesario */
+}
+
+
+/* Estilo para el contenedor de búsqueda */
+.search-container {
+    width: 200px;
+    margin: 10px;
+    float: right;
+}
+
+/* Estilo para el input de búsqueda */
+#searchInput {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilo para el contenido del producto */
+.producto-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilo para la descripción del producto */
+.descriProducto {
+    margin-right: 20px;
+    text-align: left;
+    flex: 1;
+    margin-right: 20px;
+    font-size: 14px;
+    line-height: 0.5;
+}
+
+/* Estilo específico para texto en negrita */
+.texto-en-negrita {
+    font-weight: bold;
+}
+
+/* Estilos para el fondo blanco del cuerpo */
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el botón del producto */
+.producto button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Cambia el estilo al pasar el cursor sobre el botón */
+.producto button:hover {
+    background-color: #d9fba2;
+}
+
+/* Estilo para encabezado h5 */
+h5 {
+    font-weight: bold;
+}
+
+/* Estilo para el menú */
+#menu {
+    background-color: white;
+    border-color: #d9fba2;
+}
+
+/* Estilo para el pie de página */
+#foot {
+    background-color: #333;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Estilo para enlaces en el pie de página */
+#foot a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos responsivos para pantallas pequeñas (menos de 768px) */
+@media (max-width: 768px) {
+    .producto {
+        width: 320px;
+    }
+
+    .descriProducto {
+        width: 300px;
+        margin-left: 10px;
+    }
+
+    .producto-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #foot {
+        text-align: left;
+    }
+
+}

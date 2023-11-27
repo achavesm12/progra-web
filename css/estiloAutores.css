@@ -1,0 +1,161 @@
+#menu img {
+    width: 100px;
+    height: 100px;
+
+}
+
+#menu {
+    background-color: #d9fba2;
+}
+
+.container-fluid {
+    background-color: #d9fba2;
+    color: white;
+}
+
+#eslogan {
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 5px 5px 10px grey;
+    width: 80%;
+    margin-left: 150px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+#redes img {
+    height: 75px;
+    width: 75px;
+}
+
+main {
+    flex: 1;
+}
+
+/* Estilo para las imágenes circulares */
+.galeria img {
+    border-radius: 50%;
+    width: 150px;
+    /* Ajusta el tamaño según sea necesario */
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Estilo para el contenedor de cada autor */
+.contenedor {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    /* Ajusta el margen según sea necesario */
+}
+
+/* Estilo para el contenedor de la información del autor */
+.divHistoria {
+    flex-grow: 1;
+    margin-left: 20px;
+    /* Ajusta el margen según sea necesario */
+}
+
+/* Estiliza el pie de página según tus necesidades */
+#foot {
+    background-color: #333;
+    color: white;
+    /* height: 100px;
+    margin-top: 10px; */
+    text-align: center;
+    padding: 10px;
+}
+
+#foot a {
+    color: white;
+    text-decoration: none;
+}
+
+.divHistoria {
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 500px;
+    margin: 15px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10px 20px 30px 40px;
+    /*box-shadow: 10px 10px 20px grey;*/
+}
+
+#imagen {
+    text-align: center;
+}
+
+#imagen img {
+    width: 200px;
+    height: 200px;
+    justify-content: space-between;
+}
+
+.contenedor {
+    /* display: flex;*/
+    justify-content: center;
+}
+
+.divHistoria {
+    width: 500px;
+    height: 350px;
+}
+
+h3 {
+    color: #588411;
+}
+
+#logo {
+    background-color: #d9fba2;
+}
+
+#galeria img {
+    height: 250px;
+    width: 250px;
+    margin: 25px;
+    padding: 10px;
+    border: 1px solid grey;
+    place-items: center;
+}
+
+@media(max-width:768px) {
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .divHistoria {
+        width: 250px;
+        height: 450px;
+    }
+
+    #imagen {
+        text-align: left;
+    }
+
+    #galeria img {
+        height: 240px;
+        width: 240px;
+    }
+
+    #galeria {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #foot {
+        text-align: left;
+    }
+}

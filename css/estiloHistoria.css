@@ -1,0 +1,119 @@
+#menu img {
+    width: 100px;
+    height: 100px;
+
+}
+
+#menu {
+    background-color: #d9fba2;
+}
+
+.container-fluid {
+    background-color: #d9fba2;
+    color: white;
+}
+
+#eslogan {
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 5px 5px 10px grey;
+    width: 80%;
+    margin-left: 150px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+#redes img {
+    height: 75px;
+    width: 75px;
+}
+
+main {
+    flex: 1;
+}
+
+
+#foot {
+    background-color: #333;
+    color: white;
+
+    margin-top: 10px;
+    text-align: center;
+}
+
+#foot a {
+    color: white;
+    text-decoration: none;
+}
+
+.divHistoria {
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 500px;
+    margin: 15px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10px 20px 30px 40px;
+    /*box-shadow: 10px 10px 20px grey;*/
+
+}
+
+#imagen {
+    text-align: center;
+}
+
+#imagen img {
+    width: 300px;
+    height: 300px;
+}
+
+#contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    color: #628f19;
+}
+
+#logo {
+    background-color: #d9fba2;
+}
+
+@media(max-width:768px) {
+    #contenedor {
+        flex-direction: column;
+
+    }
+
+    .divHistoria {
+        width: 285px;
+        height: 600px;
+        text-align: justify;
+
+    }
+
+    #imagen {
+        align-items: left;
+        text-align: left;
+        justify-content: left;
+        width: 275px;
+        height: 275px;
+    }
+
+    #foot {
+        text-align: left;
+    }
+
+}
